@@ -1,0 +1,65 @@
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f5f5f5;
+      gap: 3rem; /* space between h1 and carrusel */
+    }
+
+
+    p {
+      text-align: center;
+      font: 30px "Montserrat", sans-serif;
+      margin: 2rem 0 1rem;
+      color: #333;
+    }
+
+    .image-component {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .what-image-comes {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 1.5s ease-in-out;
+    }
+
+    .what-image-comes img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 10%;
+    }
+
+    .carousel-button:hover {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
